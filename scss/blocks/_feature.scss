@@ -1,0 +1,100 @@
+.feature {
+    background: linear-gradient(180deg, #EDEDED 0.35%, rgba(255, 255, 255, 0.0001) 99.6%);
+    transform: rotate(180deg);
+}
+
+.feature__container {
+    padding-top: 114px;
+    padding-bottom: 90px;
+    transform: rotate(-180deg);
+
+}
+
+.feature__main-title {
+    max-width: 530px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 58px;
+    color: #22343D;
+}
+
+.feature__card {
+    background: transparent;
+    border: none;
+
+}
+
+.feature__maker {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    border-radius: 19px;
+    background-color: #02897A;
+
+    &--first {
+        background-image: url("../img/first.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &--design {
+        background-color: #4D8DFF;
+        background-image: url("../img/design.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &--prefer {
+        background-color: #740A76;
+        background-image: url("../img/prefer.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &--five {
+        background-color: #F03E3D;
+        background-image: url("../img/five.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.feature__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: $textcolor;
+}
+
+.feature__text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.feature__btn {
+    padding: 15px 32px 14px 34px;
+    max-width: 175px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+@media only screen and (max-width:768px){
+    .feature__main-title{
+        margin-bottom: 50px;
+    }
+   .feature__card{
+    //    align-items: center;
+       text-align: center;
+   }
+   .feature__maker{
+       margin: 0 auto;
+       margin-bottom: 24px;
+   }
+   .feature__btn{
+       margin-top: 37px;
+   }
+}
