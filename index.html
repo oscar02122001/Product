@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,81 @@
     <title>Product</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
-            
+            <a class="header__logo-link" href="index.html">
+                <img class="header__logo-img" src="img/logo.svg" alt="Site logo">
+                <p class="header__logo-text">Product</p>
+            </a>
+
+            <button class="header__burger">
+                <span class="header__burger-inner"></span>
+            </button>
+
+            <nav class="header__nav">
+                <div class="header__nav-wrap">
+                    <ul class="header__list">
+                        <li class="header__itom"><a class="header__link" href="#">Prodact</a></li>
+                        <li class="header__itom"><a class="header__link" href="#">Customers</a></li>
+                        <li class="header__itom"><a class="header__link" href="#">Pricing</a></li>
+                        <li class="header__itom"><a class="header__link" href="#">Resources</a></li>
+                    </ul>
+                    <div class="header__btns">
+                        <button class="header__btn header__btn--in">Sign in</button>
+                        <button class="header__btn header__btn--up">Sign up</button>
+                        <img class="header__dark" src="img/dark-mode.svg" alt="dark-mode">
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    
+
+    <main>
+        <div class="intro">
+            <div class="container intro__container">
+                <picture>
+                    <source type="image/webp" media="(max-width: 800px)"
+                        srcset="img/amico-mob@2x.webp 2x, img/amico-mob.webp 1x">
+
+                    <source type="image/webp" media="(max-width: 992px)"
+                        srcset="img/amico-tab@2x.webp 2x, img/amico-tab.webp 1x">
+                    <source type="image/webp" srcset="img/amico@2x.webp 2x, img/amico.webp 1x">
+
+
+                    <source media="(max-width: 800px)" srcset="img/amico-mob@2x.png 2x, img/amico-mob.png 1x"
+                        width="338" height="312">
+                    <source media="(max-width: 992px)" srcset="img/amico-tab@2x.png 2x, img/amico-tab.png 1x"
+                        width="455" height="403">
+                    <img class="intro__img" src="img/amico.png" srcset="img/amico@2x.png 2x, img/amico.png 1x"
+                        alt="Our social media">
+                </picture>
+
+
+                <div class="intro__content">
+                    <p class="intro__title">Work at the speed
+                        of thought</p>
+                    <p class="intro__disc">Tools, tutorials, design and innovation experts, all in one place! The most
+                        intuitive way to imagine your next user experience.</p>
+
+                    <div class="intro__links">
+                        <button class="intro__btn btn">Get started</button>
+                        <a class="intro__video-link" href="#">
+                            <svg class="intro__video" width="17" height="19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M15.8516 8.5303c.7394.435.7394 1.5044 0 1.9394l-13.6562 8.033C1.4454 18.9439.5 18.4031.5 17.533V1.467C.5.5969 1.4454.056 2.1954.4973l13.6562 8.033Z"
+                                    fill="CurrentColor" /></svg>
+                            Watch the Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 <script src="js/main.js"></script>
+
 </html>
